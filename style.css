@@ -14,7 +14,7 @@ body{
    justify-content: center;
    align-items: center;
    min-height: 100vh;
-    background: url(fundo3.jpg) no-repeat;
+    background: url(img/fundo3.jpg) no-repeat;
     background-size: cover;
    
 
@@ -79,13 +79,12 @@ body{
     opacity: 1;
     visibility: visible;
 }
-
+.wrapper.login-active .form-wrapper.register,
+.wrapper.login-active .form-wrapper.recover,
 .wrapper.register-active .form-wrapper.login,
 .wrapper.register-active .form-wrapper.recover,
 .wrapper.recover-active .form-wrapper.login,
-.wrapper.recover-active .form-wrapper.register,
-.wrapper.login-active .form-wrapper.register,
-.wrapper.login-active .form-wrapper.recover {
+.wrapper.recover-active .form-wrapper.register {
     transform: scale(0) translate(200px, -500px);
     opacity: 0;
     visibility: hidden;
