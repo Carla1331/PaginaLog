@@ -16,7 +16,7 @@ body{
    min-height: 100vh;
     background: url(fundo3.jpg) no-repeat;
     background-size: cover;
-    /*background-position: center;*/
+   
 
 }
 
@@ -44,14 +44,14 @@ body{
     transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }
 
-/* Tela de login - por padrão ela aparece */
+
 .wrapper .form-wrapper.login {
     transform: scale(1);
     opacity: 1;
     visibility: visible;
 }
 
-/* Tela de registro e recuperação de senha - por padrão elas não aparecem */
+
 .wrapper .form-wrapper.register,
 .wrapper .form-wrapper.recover {
     transform: scale(0) translate(200px, -500px);
@@ -59,28 +59,27 @@ body{
     visibility: hidden;
 }
 
-/* Quando a classe login-active estiver no wrapper, a tela de login é mostrada */
+
 .wrapper.login-active .form-wrapper.login {
     transform: scale(1) translate(0, 0);
     opacity: 1;
     visibility: visible;
 }
 
-/* Quando a classe register-active estiver no wrapper, a tela de registro é mostrada */
+
 .wrapper.register-active .form-wrapper.register {
     transform: scale(1) translate(0, 0);
     opacity: 1;
     visibility: visible;
 }
 
-/* Quando a classe recover-active estiver no wrapper, a tela de recuperação de senha é mostrada */
+
 .wrapper.recover-active .form-wrapper.recover {
     transform: scale(1) translate(0, 0);
     opacity: 1;
     visibility: visible;
 }
 
-/* Esconde as outras telas quando uma está ativa */
 .wrapper.register-active .form-wrapper.login,
 .wrapper.register-active .form-wrapper.recover,
 .wrapper.recover-active .form-wrapper.login,
